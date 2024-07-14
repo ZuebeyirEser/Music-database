@@ -1276,4 +1276,613 @@ INSERT INTO Follows (Playlist_ID, User_ID, Start_date, End_date) VALUES
 (100, 1, '2024-07-05', '2024-08-05');
 
 
+-- Song 1 (Sunshine Dream)
+UPDATE Songs
+SET Music_notes = '../music2/Sunshine_Dream.pdf',
+    Lyrics = '../music2/Sunshine_Dream.txt'
+WHERE Song_ID = 1;
+
+-- Song 2 (Tears of Yesterday)
+UPDATE Songs
+SET Music_notes = '../music2/Tears_of_Yesterday.pdf',
+    Lyrics = '../music2/Tears_of_Yesterday.txt'
+WHERE Song_ID = 2;
+
+-- Song 3 (Dancing in the Rain)
+UPDATE Songs
+SET Music_notes = '../music2/Dancing_in_the_Rain.pdf',
+    Lyrics = '../music2/Dancing_in_the_Rain.txt'
+WHERE Song_ID = 3;
+
+-- Song 4 (Midnight Blues)
+UPDATE Songs
+SET Music_notes = '../music2/Midnight_Blues.pdf',
+    Lyrics = '../music2/Midnight_Blues.txt'
+WHERE Song_ID = 4;
+
+-- Song 5 (Echoes of Silence)
+UPDATE Songs
+SET Music_notes = '../music2/Echoes_of_Silence.pdf',
+    Lyrics = '../music2/Echoes_of_Silence.txt'
+WHERE Song_ID = 5;
+
+-- Song 6 (Electric Waves)
+UPDATE Songs
+SET Music_notes = '../music2/Electric_Waves.pdf',
+    Lyrics = '../music2/Electric_Waves.txt'
+WHERE Song_ID = 6;
+
+-- Song 7 (Lost in the Forest)
+UPDATE Songs
+SET Music_notes = '../music2/Lost_in_the_Forest.pdf',
+    Lyrics = '../music2/Lost_in_the_Forest.txt'
+WHERE Song_ID = 7;
+
+-- Song 8 (Rising Sun)
+UPDATE Songs
+SET Music_notes = '../music2/Rising_Sun.pdf',
+    Lyrics = '../music2/Rising_Sun.txt'
+WHERE Song_ID = 8;
+
+-- Song 9 (Ocean Waves)
+UPDATE Songs
+SET Music_notes = '../music2/Ocean_Waves.pdf',
+    Lyrics = '../music2/Ocean_Waves.txt'
+WHERE Song_ID = 9;
+
+-- Song 10 (Fire and Ice)
+UPDATE Songs
+SET Music_notes = '../music2/Fire_and_Ice.pdf',
+    Lyrics = '../music2/Fire_and_Ice.txt'
+WHERE Song_ID = 10;
+
+-- Song 11 (Silent Whisper)
+UPDATE Songs
+SET Music_notes = '../music2/Silent_Whisper.pdf',
+    Lyrics = '../music2/Silent_Whisper.txt'
+WHERE Song_ID = 11;
+
+-- Song 12 (Galactic Journey)
+UPDATE Songs
+SET Music_notes = '../music2/Galactic_Journey.pdf',
+    Lyrics = '../music2/Galactic_Journey.txt'
+WHERE Song_ID = 12;
+
+-- Song 13 (City Lights)
+UPDATE Songs
+SET Music_notes = '../music2/City_Lights.pdf',
+    Lyrics = '../music2/City_Lights.txt'
+WHERE Song_ID = 13;
+
+-- Song 14 (Mystic River)
+UPDATE Songs
+SET Music_notes = '../music2/Mystic_River.pdf',
+    Lyrics = '../music2/Mystic_River.txt'
+WHERE Song_ID = 14;
+
+-- Song 15 (Thunderstorm)
+UPDATE Songs
+SET Music_notes = '../music2/Thunderstorm.pdf',
+    Lyrics = '../music2/Thunderstorm.txt'
+WHERE Song_ID = 15;
+
+-- Song 16 (Broken Dreams)
+UPDATE Songs
+SET Music_notes = '../music2/Broken_Dreams.pdf',
+    Lyrics = '../music2/Broken_Dreams.txt'
+WHERE Song_ID = 16;
+
+-- Song 17 (Crystal Clear)
+UPDATE Songs
+SET Music_notes = '../music2/Crystal_Clear.pdf',
+    Lyrics = '../music2/Crystal_Clear.txt'
+WHERE Song_ID = 17;
+
+-- Song 18 (Wild Heart)
+UPDATE Songs
+SET Music_notes = '../music2/Wild_Heart.pdf',
+    Lyrics = '../music2/Wild_Heart.txt'
+WHERE Song_ID = 18;
+
+-- Song 19 (Starry Night)
+UPDATE Songs
+SET Music_notes = '../music2/Starry_Night.pdf',
+    Lyrics = '../music2/Starry_Night.txt'
+WHERE Song_ID = 19;
+
+-- Song 20 (Fireworks)
+UPDATE Songs
+SET Music_notes = '../music2/Fireworks.pdf',
+    Lyrics = '../music2/Fireworks.txt'
+WHERE Song_ID = 20;
+
+-- Song 21 (Moonlight Sonata)
+UPDATE Songs
+SET Music_notes = '../music2/Moonlight_Sonata.pdf',
+    Lyrics = '../music2/Moonlight_Sonata.txt'
+WHERE Song_ID = 21;
+
+-- Song 22 (Savannah Dreams)
+UPDATE Songs
+SET Music_notes = '../music2/Savannah_Dreams.pdf',
+    Lyrics = '../music2/Savannah_Dreams.txt'
+WHERE Song_ID = 22;
+
+-- Song 23 (Raging Fire)
+UPDATE Songs
+SET Music_notes = '../music2/Raging_Fire.pdf',
+    Lyrics = '../music2/Raging_Fire.txt'
+WHERE Song_ID = 23;
+
+-- Song 24 (Frozen Lake)
+UPDATE Songs
+SET Music_notes = '../music2/Frozen_Lake.pdf',
+    Lyrics = '../music2/Frozen_Lake.txt'
+WHERE Song_ID = 24;
+
+-- Song 25 (Electric Dreams)
+UPDATE Songs
+SET Music_notes = '../music2/Electric_Dreams.pdf',
+    Lyrics = '../music2/Electric_Dreams.txt'
+WHERE Song_ID = 25;
+
+-- Song 26 (Whispers in the Dark)
+UPDATE Songs
+SET Music_notes = '../music2/Whispers_in_the_Dark.pdf',
+    Lyrics = '../music2/Whispers_in_the_Dark.txt'
+WHERE Song_ID = 26;
+
+-- Song 27 (Golden Sunset)
+UPDATE Songs
+SET Music_notes = '../music2/Golden_Sunset.pdf',
+    Lyrics = '../music2/Golden_Sunset.txt'
+WHERE Song_ID = 27;
+
+-- Song 28 (Crystal Rain)
+UPDATE Songs
+SET Music_notes = '../music2/Crystal_Rain.pdf',
+    Lyrics = '../music2/Crystal_Rain.txt'
+WHERE Song_ID = 28;
+
+-- Song 29 (Dreamland)
+UPDATE Songs
+SET Music_notes = '../music2/Dreamland.pdf',
+    Lyrics = '../music2/Dreamland.txt'
+WHERE Song_ID = 29;
+
+-- Song 30 (Midnight City)
+UPDATE Songs
+SET Music_notes = '../music2/Midnight_City.pdf',
+    Lyrics = '../music2/Midnight_City.txt'
+WHERE Song_ID = 30;
+
+
+
+
+
+-- Song 31 
+UPDATE Songs
+SET Music_notes = '../music2/Northern_Lights.pdf',
+    Lyrics = '../music2/Northern_Lights.txt'
+WHERE Song_ID = 31;
+
+-- Song 32
+UPDATE Songs
+SET Music_notes = '../music2/Heartbeat.pdf',
+    Lyrics = '../music2/Heartbeat.txt'
+WHERE Song_ID = 32;
+
+-- Song 33
+UPDATE Songs
+SET Music_notes = '../music2/Whispering_Pines.pdf',
+    Lyrics = '../music2/Whispering_Pines.txt'
+WHERE Song_ID = 33;
+
+-- Song 34
+UPDATE Songs
+SET Music_notes = '../music2/Lost_Horizon.pdf',
+    Lyrics = '../music2/Lost_Horizon.txt'
+WHERE Song_ID = 34;
+
+-- Song 35
+UPDATE Songs
+SET Music_notes = '../music2/Eternal_Flame.pdf',
+    Lyrics = '../music2/Eternal_Flame.txt'
+WHERE Song_ID = 35;
+
+-- Song 36
+UPDATE Songs
+SET Music_notes = '../music2/Rainbow_Serenade.pdf',
+    Lyrics = '../music2/Rainbow_Serenade.txt'
+WHERE Song_ID = 36;
+
+-- Song 37
+UPDATE Songs
+SET Music_notes = '../music2/Morning_Dew.pdf',
+    Lyrics = '../music2/Morning_Dew.txt'
+WHERE Song_ID = 37;
+
+-- Song 38
+UPDATE Songs
+SET Music_notes = '../music2/Phoenix_Rising.pdf',
+    Lyrics = '../music2/Phoenix_Rising.txt'
+WHERE Song_ID = 38;
+
+-- Song 39
+UPDATE Songs
+SET Music_notes = '../music2/Silent_Echoes.pdf',
+    Lyrics = '../music2/Silent_Echoes.txt'
+WHERE Song_ID = 39;
+
+-- Song 40
+UPDATE Songs
+SET Music_notes = '../music2/Sapphire_Skies.pdf',
+    Lyrics = '../music2/Sapphire_Skies.txt'
+WHERE Song_ID = 40;
+
+-- Song 41
+UPDATE Songs
+SET Music_notes = '../music2/Moonlit_Whispers.pdf',
+    Lyrics = '../music2/Moonlit_Whispers.txt'
+WHERE Song_ID = 41;
+
+-- Song 42
+UPDATE Songs
+SET Music_notes = '../music2/Dancing_Starlight.pdf',
+    Lyrics = '../music2/Dancing_Starlight.txt'
+WHERE Song_ID = 42;
+
+-- Song 43
+UPDATE Songs
+SET Music_notes = '../music2/Lost_in_Translation.pdf',
+    Lyrics = '../music2/Lost_in_Translation.txt'
+WHERE Song_ID = 43;
+
+-- Song 44
+UPDATE Songs
+SET Music_notes = '../music2/Rising_Phoenix.pdf',
+    Lyrics = '../music2/Rising_Phoenix.txt'
+WHERE Song_ID = 44;
+
+-- Song 45
+UPDATE Songs
+SET Music_notes = '../music2/Serenity_Falls.pdf',
+    Lyrics = '../music2/Serenity_Falls.txt'
+WHERE Song_ID = 45;
+
+-- Song 46
+UPDATE Songs
+SET Music_notes = '../music2/Golden_Dreams.pdf',
+    Lyrics = '../music2/Golden_Dreams.txt'
+WHERE Song_ID = 46;
+
+-- Song 47
+UPDATE Songs
+SET Music_notes = '../music2/Whispering_Winds.pdf',
+    Lyrics = '../music2/Whispering_Winds.txt'
+WHERE Song_ID = 47;
+
+-- Song 48
+UPDATE Songs
+SET Music_notes = '../music2/Ethereal_Journey.pdf',
+    Lyrics = '../music2/Ethereal_Journey.txt'
+WHERE Song_ID = 48;
+
+-- Song 49
+UPDATE Songs
+SET Music_notes = '../music2/Starlight_Sonata.pdf',
+    Lyrics = '../music2/Starlight_Sonata.txt'
+WHERE Song_ID = 49;
+
+-- Song 50
+UPDATE Songs
+SET Music_notes = '../music2/Enchanted_Garden.pdf',
+    Lyrics = '../music2/Enchanted_Garden.txt'
+WHERE Song_ID = 50;
+
+
+
+-- Song 51
+UPDATE Songs
+SET Music_notes = '../music2/Echoes_of_Spring.pdf',
+    Lyrics = '../music2/Echoes_of_Spring.txt'
+WHERE Song_ID = 51;
+
+-- Song 52
+UPDATE Songs
+SET Music_notes = '../music2/Whispering_Sands.pdf',
+    Lyrics = '../music2/Whispering_Sands.txt'
+WHERE Song_ID = 52;
+
+-- Song 53
+UPDATE Songs
+SET Music_notes = '../music2/Silver_Lining.pdf',
+    Lyrics = '../music2/Silver_Lining.txt'
+WHERE Song_ID = 53;
+
+-- Song 54
+UPDATE Songs
+SET Music_notes = '../music2/Ocean_Breeze.pdf',
+    Lyrics = '../music2/Ocean_Breeze.txt'
+WHERE Song_ID = 54;
+
+-- Song 55
+UPDATE Songs
+SET Music_notes = '../music2/Mystic_Sands.pdf',
+    Lyrics = '../music2/Mystic_Sands.txt'
+WHERE Song_ID = 55;
+
+-- Song 56
+UPDATE Songs
+SET Music_notes = '../music2/Dreamers_Waltz.pdf',
+    Lyrics = '../music2/Dreamers_Waltz.txt'
+WHERE Song_ID = 56;
+
+-- Song 57
+UPDATE Songs
+SET Music_notes = '../music2/Epic_Odyssey.pdf',
+    Lyrics = '../music2/Epic_Odyssey.txt'
+WHERE Song_ID = 57;
+
+-- Song 58
+UPDATE Songs
+SET Music_notes = '../music2/Crimson_Sunset.pdf',
+    Lyrics = '../music2/Crimson_Sunset.txt'
+WHERE Song_ID = 58;
+
+-- Song 59
+UPDATE Songs
+SET Music_notes = '../music2/Solitude.pdf',
+    Lyrics = '../music2/Solitude.txt'
+WHERE Song_ID = 59;
+
+-- Song 60 (Duplicate)
+UPDATE Songs
+SET Music_notes = '../music2/Echoes_of_Autumn.pdf',
+    Lyrics = '../music2/Echoes_of_Autumn.txt'
+WHERE Song_ID = 60;
+
+-- Song 61
+UPDATE Songs
+SET Music_notes = '../music2/Celestial_Serenade.pdf',
+    Lyrics = '../music2/Celestial_Serenade.txt'
+WHERE Song_ID = 61;
+
+-- Song 62
+UPDATE Songs
+SET Music_notes = '../music2/Whispers_of_Love.pdf',
+    Lyrics = '../music2/Whispers_of_Love.txt'
+WHERE Song_ID = 62;
+
+-- Song 63
+UPDATE Songs
+SET Music_notes = '../music2/Aurora_Borealis.pdf',
+    Lyrics = '../music2/Aurora_Borealis.txt'
+WHERE Song_ID = 63;
+
+-- Song 64
+UPDATE Songs
+SET Music_notes = '../music2/Eternal_Journey.pdf',
+    Lyrics = '../music2/Eternal_Journey.txt'
+WHERE Song_ID = 64;
+
+-- Song 65
+UPDATE Songs
+SET Music_notes = '../music2/Sapphire_Dreams.pdf',
+    Lyrics = '../music2/Sapphire_Dreams.txt'
+WHERE Song_ID = 65;
+
+-- Song 66
+UPDATE Songs
+SET Music_notes = '../music2/Echoes_of_Winter.pdf',
+    Lyrics = '../music2/Echoes_of_Winter.txt'
+WHERE Song_ID = 66;
+
+-- Song 67
+UPDATE Songs
+SET Music_notes = '../music2/Whispering_Brook.pdf',
+    Lyrics = '../music2/Whispering_Brook.txt'
+WHERE Song_ID = 67;
+
+-- Song 68
+UPDATE Songs
+SET Music_notes = '../music2/Celestial_Symphony.pdf',
+    Lyrics = '../music2/Celestial_Symphony.txt'
+WHERE Song_ID = 68;
+
+-- Song 69
+UPDATE Songs
+SET Music_notes = '../music2/Echoes_of_Hope.pdf',
+    Lyrics = '../music2/Echoes_of_Hope.txt'
+WHERE Song_ID = 69;
+
+-- Song 70
+UPDATE Songs
+SET Music_notes = '../music2/Ethereal_Waters.pdf',
+    Lyrics = '../music2/Ethereal_Waters.txt'
+WHERE Song_ID = 70;
+
+-- Song 71
+UPDATE Songs
+SET Music_notes = '../music2/Serenity.pdf',
+    Lyrics = '../music2/Serenity.txt'
+WHERE Song_ID = 71;
+
+-- Song 72
+UPDATE Songs
+SET Music_notes = '../music2/Dreamscape.pdf',
+    Lyrics = '../music2/Dreamscape.txt'
+WHERE Song_ID = 72;
+
+-- Song 73
+UPDATE Songs
+SET Music_notes = '../music2/Crimson_Horizon.pdf',
+    Lyrics = '../music2/Crimson_Horizon.txt'
+WHERE Song_ID = 73;
+
+-- Song 74
+UPDATE Songs
+SET Music_notes = '../music2/Whispering_Dreams.pdf',
+    Lyrics = '../music2/Whispering_Dreams.txt'
+WHERE Song_ID = 74;
+
+-- Song 75
+UPDATE Songs
+SET Music_notes = '../music2/Eternal_Serenade.pdf',
+    Lyrics = '../music2/Eternal_Serenade.txt'
+WHERE Song_ID = 75;
+
+
+
+
+
+-- Song 76 (Moonlit Mirage)
+UPDATE Songs
+SET Music_notes = '../music2/Moonlit_Mirage.pdf',
+    Lyrics = '../music2/Moonlit_Mirage.txt'
+WHERE Song_ID = 76;
+
+-- Song 77 (Starry Night)
+UPDATE Songs
+SET Music_notes = '../music2/Starry_Night.pdf',
+    Lyrics = '../music2/Starry_Night.txt'
+WHERE Song_ID = 77;
+
+-- Song 78 (Whispers of Hope)
+UPDATE Songs
+SET Music_notes = '../music2/Whispers_of_Hope.pdf',
+    Lyrics = '../music2/Whispers_of_Hope.txt'
+WHERE Song_ID = 78;
+
+-- Song 79 (Ethereal Symphony)
+UPDATE Songs
+SET Music_notes = '../music2/Ethereal_Symphony.pdf',
+    Lyrics = '../music2/Ethereal_Symphony.txt'
+WHERE Song_ID = 79;
+
+-- Song 80 (Celestial Dreams)
+UPDATE Songs
+SET Music_notes = '../music2/Celestial_Dreams.pdf',
+    Lyrics = '../music2/Celestial_Dreams.txt'
+WHERE Song_ID = 80;
+
+-- Song 81 (Sapphire Horizon)
+UPDATE Songs
+SET Music_notes = '../music2/Sapphire_Horizon.pdf',
+    Lyrics = '../music2/Sapphire_Horizon.txt'
+WHERE Song_ID = 81;
+
+-- Song 82 (Tranquil Echoes)
+UPDATE Songs
+SET Music_notes = '../music2/Tranquil_Echoes.pdf',
+    Lyrics = '../music2/Tranquil_Echoes.txt'
+WHERE Song_ID = 82;
+
+-- Song 83 (Whispering Shadows)
+UPDATE Songs
+SET Music_notes = '../music2/Whispering_Shadows.pdf',
+    Lyrics = '../music2/Whispering_Shadows.txt'
+WHERE Song_ID = 83;
+
+-- Song 84 (Eternal Symphony)
+UPDATE Songs
+SET Music_notes = '../music2/Eternal_Symphony.pdf',
+    Lyrics = '../music2/Eternal_Symphony.txt'
+WHERE Song_ID = 84;
+
+-- Song 85 (Moonlit Echoes)
+UPDATE Songs
+SET Music_notes = '../music2/Moonlit_Echoes.pdf',
+    Lyrics = '../music2/Moonlit_Echoes.txt'
+WHERE Song_ID = 85;
+
+-- Song 86 (Stellar Serenade)
+UPDATE Songs
+SET Music_notes = '../music2/Stellar_Serenade.pdf',
+    Lyrics = '../music2/Stellar_Serenade.txt'
+WHERE Song_ID = 86;
+
+-- Song 87 (Whispers of Serenity)
+UPDATE Songs
+SET Music_notes = '../music2/Whispers_of_Serenity.pdf',
+    Lyrics = '../music2/Whispers_of_Serenity.txt'
+WHERE Song_ID = 87;
+
+-- Song 88 (Ethereal Dreams)
+UPDATE Songs
+SET Music_notes = '../music2/Ethereal_Dreams.pdf',
+    Lyrics = '../music2/Ethereal_Dreams.txt'
+WHERE Song_ID = 88;
+
+-- Song 89 (Sapphire Serenade)
+UPDATE Songs
+SET Music_notes = '../music2/Sapphire_Serenade.pdf',
+    Lyrics = '../music2/Sapphire_Serenade.txt'
+WHERE Song_ID = 89;
+
+-- Song 90 (Whispering Waves)
+UPDATE Songs
+SET Music_notes = '../music2/Whispering_Waves.pdf',
+    Lyrics = '../music2/Whispering_Waves.txt'
+WHERE Song_ID = 90;
+
+-- Song 91 (Eternal Echoes)
+UPDATE Songs
+SET Music_notes = '../music2/Eternal_Echoes.pdf',
+    Lyrics = '../music2/Eternal_Echoes.txt'
+WHERE Song_ID = 91;
+
+-- Song 92 (Moonlit Melodies)
+UPDATE Songs
+SET Music_notes = '../music2/Moonlit_Melodies.pdf',
+    Lyrics = '../music2/Moonlit_Melodies.txt'
+WHERE Song_ID = 92;
+
+-- Song 93 (Stellar Symphony)
+UPDATE Songs
+SET Music_notes = '../music2/Stellar_Symphony.pdf',
+    Lyrics = '../music2/Stellar_Symphony.txt'
+WHERE Song_ID = 93;
+
+-- Song 94 (Whispers of Stardust)
+UPDATE Songs
+SET Music_notes = '../music2/Whispers_of_Stardust.pdf',
+    Lyrics = '../music2/Whispers_of_Stardust.txt'
+WHERE Song_ID = 94;
+
+-- Song 95 (Ethereal Serenade)
+UPDATE Songs
+SET Music_notes = '../music2/Ethereal_Serenade.pdf',
+    Lyrics = '../music2/Ethereal_Serenade.txt'
+WHERE Song_ID = 95;
+
+-- Song 96 (Sapphire Symphony)
+UPDATE Songs
+SET Music_notes = '../music2/Sapphire_Symphony.pdf',
+    Lyrics = '../music2/Sapphire_Symphony.txt'
+WHERE Song_ID = 96;
+
+-- Song 97 (Whispering Starlight)
+UPDATE Songs
+SET Music_notes = '../music2/Whispering_Starlight.pdf',
+    Lyrics = '../music2/Whispering_Starlight.txt'
+WHERE Song_ID = 97;
+
+-- Song 98 (Stellar Serenity)
+UPDATE Songs
+SET Music_notes = '../music2/Stellar_Serenity.pdf',
+    Lyrics = '../music2/Stellar_Serenity.txt'
+WHERE Song_ID = 98;
+
+-- Song 99 (Eternal Echo)
+UPDATE Songs
+SET Music_notes = '../music2/Eternal_Echo.pdf',
+    Lyrics = '../music2/Eternal_Echo.txt'
+WHERE Song_ID = 99;
+
+-- Song 100 (Moonlit Serenade)
+UPDATE Songs
+SET Music_notes = '../music2/Moonlit_Serenade.pdf',
+    Lyrics = '../music2/Moonlit_Serenade.txt'
+WHERE Song_ID = 100;
 
