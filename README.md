@@ -46,8 +46,30 @@ Finally, the “Normalization” section discusses the normalization process app
 1. I navigate to the "Recent Additions" section, I should see a list of the 10 most recently added songs to any playlist
 2. each entry should display the song name, playlist name, playlist id, date that added and user name
 3. the songs should be ordered by the time they were added, with the most recent addition appearing first.
-4. the list should update to reflect the 10 most recent additions
+4. the list should update to reflect the 10 most recent additions.
 
+**Solutions 1:**
+``` sql
+SELECT 
+    S.Song_ID, 
+    S.Song_Name, 
+    PC.Playlist_ID, 
+    P.Playlist_Name, 
+    PC.Date_added, 
+    U.User_ID, 
+    U.Username
+FROM 
+    Songs S
+INNER JOIN 
+    playlistsContains PC ON S.Song_ID = PC.Song_ID
+INNER JOIN 
+    Playlist P ON PC.Playlist_ID = P.Playlist_ID
+INNER JOIN 
+    Users U ON P.Creator = U.User_ID
+ORDER BY 
+    PC.Date_added DESC
+LIMIT 10;
+```
 **User Story 2:**
 
 As professional DJ, I want to see all songs with more than 5000 views that are part of at least one track, sorted from increasing to decreasing order, so that I can discover popular songs that are used in tracks.
@@ -59,7 +81,24 @@ As professional DJ, I want to see all songs with more than 5000 views that are p
 3. The system should sort the list of songs in decreasing order of views.
 4. The system should display the song title, number of views, and the track(s) it is part of.
 5. The system should handle any exceptions or errors gracefully and inform the user accordingly.
-
+**Solutions 2:**
+``` sql
+SELECT 
+    S.Song_ID, 
+    S.Song_Name, 
+    S.View_count,
+    T.Track_Name
+FROM 
+    Songs S
+INNER JOIN 
+    Contains C ON S.Song_ID = C.Song_ID
+INNER JOIN
+    Track T ON C.Track_ID = T.Track_ID
+WHERE 
+    S.View_count > 1000
+ORDER BY
+    S.View_count  DESC;
+```
 **User Story 3:**
 
 As a registered user of our music streaming platform, I want the system to provide me with a list of the top 5 songs ranked by view count, so that I can easily discover what's trending and popular in the music world. This list should also include detailed information about the album from which the song originates and the artist who performed it. This will help me explore the context of each song, learn more about the albums and artists behind them, and potentially discover more songs that I might enjoy. In addition, I would like to see the total number of times each of these top songs has been downloaded. This will give me an idea of the song's popularity beyond just the number of views, as it indicates how many users loved the song enough to download it.
@@ -73,6 +112,29 @@ As a registered user of our music streaming platform, I want the system to provi
 5. If two or more songs have the same view count, the song with the higher download count should be ranked higher.
 6. If there are fewer than 5 songs in the database, the system should return all songs sorted by view count.
 7. The system should handle the case where there are no songs in the database gracefully, displaying an appropriate message to the user.
+
+**Solutions 3:**
+``` sql
+SELECT 
+    s.Song_ID, 
+    s.Song_Name, 
+    s.View_count AS Song_View_Count, 
+    a.Album_Name, 
+    u.Username AS Artist_Name, 
+    d.Total_Downloads
+FROM 
+    Songs s
+JOIN 
+    Album a ON s.Album_ID = a.Album_Id
+JOIN 
+    Users u ON a.User_ID = u.User_ID
+LEFT JOIN 
+    (SELECT Song_ID, COUNT(*) AS Total_Downloads FROM Downloads GROUP BY Song_ID) d ON s.Song_ID = d.Song_ID
+ORDER BY 
+    s.View_count DESC, 
+    d.Total_Downloads DESC
+LIMIT 5;
+```
 
 **User Story 4:**
 
@@ -92,6 +154,66 @@ As a data analyst, I want to see the top 3 most popular genres based on total vi
 1. The system should be able to handle a large number of songs and playlists without performance degradation.
 2. The system should ensure that only songs added to public playlists are displayed, not those added to private playlists.
 
+**Solutions 4:**
+``` sql
+WITH GenreViews AS (
+    SELECT 
+        Genre,
+        COUNT(Song_ID) AS Num_Songs,
+        SUM(View_count) AS Total_Views
+    FROM 
+        Songs
+    GROUP BY 
+        Genre
+),
+TopGenres AS (
+    SELECT 
+        Genre,
+        Num_Songs,
+        Total_Views,
+        ROW_NUMBER() OVER (ORDER BY Total_Views DESC) AS Genre_Rank
+    FROM 
+        GenreViews
+),
+Top3Genres AS (
+    SELECT 
+        Genre,
+        Num_Songs,
+        Total_Views
+    FROM 
+        TopGenres
+    WHERE 
+        Genre_Rank <= 3
+),
+TopSongsInGenres AS (
+    SELECT 
+        s.Genre,
+        s.Song_ID,
+        s.Song_Name,
+        s.View_count,
+        ROW_NUMBER() OVER (PARTITION BY s.Genre ORDER BY s.View_count DESC) AS Song_Rank
+    FROM 
+        Songs s
+    WHERE 
+        s.Genre IN (SELECT Genre FROM Top3Genres)
+)
+SELECT 
+    g.Genre,
+    g.Num_Songs,
+    g.Total_Views,
+    ts.Song_ID,
+    ts.Song_Name,
+    ts.View_count
+FROM 
+    Top3Genres g
+JOIN 
+    TopSongsInGenres ts ON g.Genre = ts.Genre
+WHERE 
+    ts.Song_Rank <= 3
+ORDER BY 
+    g.Total_Views DESC, g.Genre, ts.Song_Rank;
+```
+
 **User Story 5:**
 
 As a music platform user, I want to see the 10 most recent songs added to public playlists, so that I can discover new music and stay updated with the latest additions.
@@ -107,6 +229,26 @@ As a music platform user, I want to see the 10 most recent songs added to public
 - The song name.
 - The playlist name it was added to.
 - The date that it was added.
+
+**Solutions 5:**
+``` sql
+SELECT 
+    S.Song_ID, 
+    S.Song_Name, 
+    P.Playlist_Name, 
+    PC.Date_added
+FROM 
+    Songs S
+INNER JOIN 
+    playlistsContains PC ON S.Song_ID = PC.Song_ID
+INNER JOIN 
+    Playlist P ON PC.Playlist_ID = P.Playlist_ID
+WHERE 
+    P.Privacy_Status = 'public'
+ORDER BY 
+    PC.Date_added DESC
+LIMIT 10;
+```
 
 ## **User story to ER Model**
 
