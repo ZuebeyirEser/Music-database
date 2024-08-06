@@ -81,6 +81,7 @@ As professional DJ, I want to see all songs with more than 5000 views that are p
 3. The system should sort the list of songs in decreasing order of views.
 4. The system should display the song title, number of views, and the track(s) it is part of.
 5. The system should handle any exceptions or errors gracefully and inform the user accordingly.
+
 **Solutions 2:**
 ``` sql
 SELECT 
