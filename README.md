@@ -25,41 +25,23 @@ Project: Music Database
 
 [2 User Stories 5](#_Toc171984036)
 
-[2.1 Zübeyir Eser’s User Stories 5](#_Toc171984037)
+[2.1 **Zübeyir Eser’s User story to ER Model** 6](#_Toc171984038)
 
-[2.1.1 **Zübeyir Eser’s User story to ER Model** 6](#_Toc171984038)
+[3 Entity-Relationship Model (ERM): 7](#_Toc171984047)
 
-[2.2 Ashish Ghaskata’s User Stories 7](#_Toc171984039)
+[3.1 Tables and its Attributes 8](#_Toc171984048)
 
-[2.2.1 **Ashish Ghaskata’s User story to ER Model** 8](#_Toc171984040)
+[3.2 Relations: 9](#_Toc171984049)
 
-[2.3 Welat Irmak’s User Story 9](#_Toc171984041)
+[4 Entity-Relationship Diagram (ERD): 10](#_Toc171984050)
 
-[2.3.1 **Welat Irmak’s User Story to ER Model** 10](#_Toc171984042)
+[4.1 Data Types and Constraints in Database Design 11](#_Toc171984051)
 
-[2.4 Hassaan Naveed’s User Stories 10](#_Toc171984043)
+[4.1.1 **Data Types** 12](#_Toc171984052)
 
-[2.4.1 **Hassaan Naveed’s User Story to ER Model** 12](#_Toc171984044)
+[5 Normalization 13](#_Toc171984053)
 
-[2.5 Ahmed Mohammedseid’s User Stories 12](#_Toc171984045)
-
-[2.5.1 **Ahmed Mohammedseid’s User Story to ER Model** 14](#_Toc171984046)
-
-[3 Entity-Relationship Model (ERM): 14](#_Toc171984047)
-
-[3.1 Tables and its Attributes 14](#_Toc171984048)
-
-[3.2 Relations: 16](#_Toc171984049)
-
-[4 Entity-Relationship Diagram (ERD): 18](#_Toc171984050)
-
-[4.1 Data Types and Constraints in Database Design 19](#_Toc171984051)
-
-[4.1.1 **Data Types** 20](#_Toc171984052)
-
-[5 Normalization 20](#_Toc171984053)
-
-[6 Contribution 21](#_Toc171984054)
+[6 Contribution 14](#_Toc171984054)
 
 # Introduction
 
@@ -97,9 +79,8 @@ The “Data Types and Constraints in Database Design” subsection discusses the
 
 Finally, the “Normalization” section discusses the normalization process applied to the database. It explains how the database was decomposed into tables to eliminate redundancy and dependency anomalies, and specifies the normal form (1NF, 2NF, 3NF, BCNF) that each table satisfies.
 
-# User Stories
 
-## Zübeyir Eser’s User Stories
+# User Stories
 
 **User Story 1:** _Retrieve the 10 Most Recent Song Additions to Playlists_
 
@@ -172,7 +153,7 @@ As a music platform user, I want to see the 10 most recent songs added to public
 - The playlist name it was added to.
 - The date that it was added.
 
-### **Zübeyir Eser’s User story to ER Model**
+## **User story to ER Model**
 
 The first user story requires the system to retrieve the 10 most recent song additions to playlists. This directly relates to the _playlistsContains_ table in your database, which records the _Song_ID_, _Playlist_ID_, and _Date_added_. To fulfill this user story, you would need to perform a query on this table to select the 10 most recent song additions.
 
@@ -184,249 +165,6 @@ The fourth user story requires the system to provide the top 3 most popular genr
 
 The fifth user story is similar to the first one, but it specifically involves public playlists. This would involve the _playlistsContains_ and Playlist tables. The Playlist table has a _Privacy_Status_ field that can be used to filter for public playlists.
 
-## Ashish Ghaskata’s User Stories
-
-**User Story 1:**
-
-As a user with diverse musical tastes, I want a feature that offers curated playlists based on specific themes or occasions. Such as road trips, study sessions, or holiday celebrations, enhancing my listening experience with tailored content.
-
-**Acceptance Criteria 1:**
-
-1. Users can select from a variety of themes or occasions (e.g., road trips, study sessions, holiday celebrations).
-2. The system provides curated playlists for the selected theme.
-3. Playlists are updated regularly to include new songs.
-4. Users can save and access these curated playlists for future use.
-5. The feature is accessible from the main menu or a dedicated section of the app.
-
-**User Story 2:**
-
-As a user who enjoys music from around the world, I want access to a feature that offers curated playlists showcasing music from different cultures, regions, and languages, allowing me to explore diverse musical traditions and genres
-
-**Acceptance Criteria 2:**
-
-1. Users can select from a list of cultures, regions, and languages.
-2. The system provides curated playlists for the selected culture, region, or language.
-3. Playlists include a diverse range of music from the selected area.
-4. Users can save and access these curated playlists for future listening.
-5. The feature includes detailed information about the music and artists from the selected regions.
-
-**User Story 3:´**
-
-As a a user with a busy lifestyle, I want access to a feature that offers offline listening capabilities, allowing me to download my favourite songs, albums, and playlists to my device for uninterrupted music enjoyment on the go.
-
-**Acceptance Criteria 3:**
-
-1. Users can download individual songs, albums, and entire playlists for offline listening.
-2. Downloaded content is stored locally on the user's device.
-3. Users can access and play downloaded content without an internet connection.
-4. Users can manage downloaded content, including deleting and re-downloading songs.
-5. The system tracks and analyses the number of downloads for each song.
-
-**User Story 4:**
-
-As a user interested in discovering music from different eras, I want access to a feature that offers curated playlists showcasing music from specific decades or historical periods, allowing me to explore the evolution of popular music over time.
-
-**Acceptance Criteria 4:**
-
-1. Users can select from a list of decades or historical periods.
-2. The system provides curated playlists for the selected decade or period.
-3. Playlists include a wide range of popular music from the chosen time frame.
-4. Users can save and access these curated playlists for future listening.
-5. The feature includes historical context and information about the music and artists from the selected period.
-
-**User Story 5:**
-
-As a music enthusiast, I want to see the view counts for songs and albums, so I can easily discover and enjoy popular tracks that resonate with other listeners, ensuring I stay up to date with trending and widely-loved music.
-
-**Acceptance Criteria 5:**
-
-1. The system displays the view counts for each song and album.
-2. View counts are updated in real-time or at regular intervals.
-3. Users can sort and filter songs and albums by view count.
-4. Users can access additional details about the popularity trends of specific songs and albums.
-
-### **Ashish Ghaskata’s User story to ER Model**
-
-We try to the user stories and acceptance criteria align with our ER Model. Here the Users entity, with attributes like User ID represents individual users. The Songs entity provides detailed song information such as song ID, album ID, and view count. The relationship between Users and Songs supports key features like viewing song details, offline downloads and tracking popularity.
-
-The Album entity links Users and Songs, enabling comprehensive music exploration. The Playlist entity is essential for curated content, supporting the creation, sharing and following of playlists, aligned with user stories on themed playlists and cultural music exploration,
-
-The Downloads entity tracks offline listening. While the View Counts entity displays song and album popularity, The Rate entity captures user feedback for personalized recommendations.
-
-## Welat Irmak’s User Story
-
-**User Story 1:**
-
-As a music enthusiast, I want to be able to search for songs by genre, artist, or release date, so I can discover new music and explore different styles easily.
-
-**Acceptance Criteria 1:**
-
-1. Users can search for songs by entering a genre, artist name, or release date.
-2. Users should have the option to further refine their search results based on additional criteria such as album name or popularity.
-
-**User Story 2:**
-
-As a DJ, I need a music database that not only provides BPM and key detection but also offers detailed waveform analysis and beat grid alignment for each track, allowing me to perform precise cueing and beatmatching, even in challenging mixing environments such as noisy clubs or outdoor events.
-
-**Acceptance Criteria 2:**
-
-1. Accurate BPM detection for each track.
-2. Ability to browse songs by BPM and view popular playlists.
-
-**User Story 3:**
-
-As a concert organizer, I require a music database that has audience analytics, enabling me to analyze past attendance data, identify popular genres and artists, and curate lineups that resonate with my target audience, ultimately maximizing my ticket sales and enhancing the overall concert experience. Ticket sales are conducted on other platform.
-
-**Acceptance Criteria 3:**
-
-1. \-It must provide comprehensive audience analytics like demographics.
-2. \-Ability to browse songs by artists.
-
-**User Story 4:**
-
-As a music teacher, I want to have access to a comprehensive database of sheet music to aid in lesson planning and curriculum development.
-
-**Acceptance Criteria 4:**
-
-1. The database should include a wide range of music sheets.
-2. The database should provide information about each piece of sheet music, time signature, language and any special instructions.
-
-**User Story 5:**
-
-As a record label executive, I need a music database that offers detailed analytics on streaming for artists' tracks, including listener demographics, geographic distribution, and trend analysis, empowering me to identify emerging markets and allocate resources effectively to maximize our artists' reach and revenue potential.
-
-**Acceptance Criteria 5:**
-
-1. Enable trend analysis over time and filtering by artist/album.
-2. Include metrics like downloads, and listener demographics.
-
-### **Welat Irmak’s User Story to ER Model**
-
-To meet the diverse needs of music enthusiasts, DJs, concert organizers, music teachers, and record label executives, the proposed ER Model integrates several key entities and relationships. Users can explore songs through comprehensive search functionalities by genre, artist, or release date, facilitated by the Song, Artist, and Album entities. Refinement options, such as filtering results by album name or popularity, enhance the user experience, aligning with the requirements of music enthusiasts seeking new discoveries.
-
-The ER Model includes BPM recognition for DJs who need precise music management capabilities. BPM information found Songs.
-
-The ER Model's audience analytics, which provide information on popular artists, genres, and demographics, are advantageous to concert promoters. This feature, which is derived from properties shared by entities such as Users, Songs, Downloads. Those statistics helps promote ticket sales and improve concert experiences by helping to curate lineups that appeal to a variety of audiences.
-
-Moreover, the ER Model gives record label executives and music teachers access to extensive music databases. A vast selection of sheet music featuring comprehensive details on languages, and teaching notes is available to music educators. Record label executives, meanwhile, make strategic decisions to optimize artists' reach and financial potential by leveraging listener demographics and trend analysis from entities like Downloads, Users and Songs.
-
-This integrated ER Model not only fulfills the specific needs outlined by each user story but also supports broader functionalities essential for navigating and leveraging the diverse landscape of the music industry today.
-
-## Hassaan Naveed’s User Stories
-
-**User Story 1:**
-
-As a music enthusiast, I want to create personalized playlists so that I can organize songs based on my mood.
-
-**Acceptance Criteria 1:**
-
-- The system must allow users to create a new playlist, which will be recorded in the **Playlist** table.
-- Each playlist must have a unique **Playlist_ID**, a **Creator** (which is a **User_ID**), **Playlist_Name**, **Privacy** settings, **View_count**, and a **Theme**.
-- The system must update the **View_count** field each time the playlist is accessed.
-- Songs added to a playlist must be recorded in the **playlistsContains** table with a valid **Song_ID**, **Playlist_ID**, **Date_added**, and **Rank_in_playlist**.
-- Songs must contain **Mood** to identify them while creating a playlist.
-
-**User Story 2:**
-
-As a commuter, I want to be able to download songs so that I can listen to them offline.
-
-**Acceptance Criteria 2:**
-
-- The system must create a record in the **Downloads** table for each song downloaded.
-- Each record in the Downloads table must contain a valid **User_ID** and **Song_ID**.
-- The **Timestamp** field must be automatically populated.
-
-**User Story 3:**
-
-As a language learner, I want search songs based on the language I am currently learning to improve my language skills while enjoying music.
-
-**Acceptance Criteria 3:**
-
-- **T**he system must allow users to search for songs based on the **Language** field in the **Songs** table.
-- The search functionality must query the **Songs** table and return songs that match the specified language.
-- The system should display the **Song_Name**, **Artist**, **Album_Name**, and other relevant song information in the search results.
-
-**User Story 4:**
-
-As a party host, I want the ability to share my playlist publicly with the people in the party to create a dynamic and diverse music selection that enhances the atmosphere of the event.
-
-**Acceptance Criteria 4:**
-
-- The system must allow users to set the **Privacy** setting of a playlist to public, which is recorded in the **Playlist** table.
-- When a playlist is set to public, it must create a record in the **Follows** table with the **Playlist_ID** and the **User_ID** of the party host.
-- Other users must be able to **follow** the public playlist, allowing them to add or remove songs, recorded in the **playlistsContains** table.
-- The system must ensure that changes to the playlist (adding/removing songs) are reflected in real-time for all users following the playlist.
-- The **View_count** of the playlist must be updated each time it is accessed by any user.
-
-**User Story 5:**
-
-As an artist, I want to upload albums so that my music can be shared with others.
-
-**Acceptance Criteria 5:**
-
-- The system must allow artists (users with a specific User_type) to upload albums, recording each album in the Album table.
-- Each album record must contain a unique Album_ID, User_ID (as the artist), Album_cover_Artist, Album_Name, and Album_view_count.
-- Each song in the album must be associated with the album through the Songs table, which contains Album_ID.
-
-### **Hassaan Naveed’s User Story to ER Model**
-
-Based on User story 1, there has to be a zero to many relationships from User to Playlist with the name 'Creates'. There has to be a one to many between Playlist and Songs with the name 'Consist of'. The songs must also contain 'Mood' attribute. Based on User story 2, there has to be a zero to many relationship between User and Songs with the name 'Downloads'. Based on User story 4, There has to be a 'public/private' attribute to the playlist. According to User story 5, a Musician can upload an Album with zero to many relationship. A Song 'belongs to' an Album with one to many relationship.
-
-## Ahmed Mohammedseid’s User Stories
-
-**User Story 1:**
-
-**As a gamer who enjoys in-game music**, I want to search for songs based on the video games they're featured in, so I can create a playlist that brings back nostalgic memories of my favorite gaming experiences.
-
-**Acceptance Criteria 1:**
-
-1. \-Users can search for songs by entering the name of a video game.
-2. \-Search results should display song titles, artists (if applicable), and potentially information about the game itself (composer, genre).
-
-**User Story 2:**
-
-**As a forgetful user,** I want the database to automatically save my recent searches, so that I don't have to re-enter them every time. and also I want the database to automatically create playlists based on my recently played songs, so I can easily revisit music I enjoyed without having to remember the titles or artists.
-
-**Acceptance Criteria 2:**
-
-1. The database stores a user's recent searches.
-2. Users may have the option to customize or edit automatically generated playlists. This could involve adding/removing songs or changing the playlist name
-3. Based on a user's recent listening history, the database automatically generates playlists. Playlists can be generated daily, weekly, or based on a configurable timeframe.
-4. Playlists may be based on factors like genre, mood, or similar artists. The specific algorithm used to generate playlists can be defined based on user preferences or system defaults.
-
-**User Story 3:**
-
-**As a music conspiracy theorist,** I want to search for hidden messages and symbolism within song lyrics and album artwork, so I can explore and document potential hidden meanings.
-
-**Acceptance Criteria 3:**
-
-1. Users can search for songs based on keywords or phrases potentially related to hidden messages.
-2. Search results include song lyrics and access to album artwork.
-3. The database may allow users to annotate lyrics or artwork with their interpretations.
-
-**User Story 4:**
-
-**As a productivity enthusiast who uses music for focus,** I want to be able to block out distractions with playlists featuring binaural beats or ambient soundscapes, so I can stay concentrated and achieve my goals.
-
-Acceptance Criteria 4:
-
-1. Users can search for music categorized as binaural beats or ambient soundscapes. The search functionality should allow filtering based on these categories.
-2. Search results display song titles, artists (if applicable), and clear information about the music category (binaural beats/ambient soundscapes).
-3. The database provides pre-curated playlists specifically designed for focus and concentration featuring binaural beats or ambient soundscapes. Users can easily access these playlists within the UI.
-
-**User Story 5:**
-
-**As a nostalgic listener who enjoys childhood memories,** I want to search for songs based on popular toys or trends from specific decades, so I can create playlists that take me back to a simpler time.
-
-**Acceptance Criteria 5:**
-
-1. Users can search for songs by entering keywords related to popular toys or trends from a specific decade.
-2. Search results should display song titles, artists, and potentially release dates.
-3. The database may include additional information about the songs' cultural context or association with the specified trends.
-
-### **Ahmed Mohammedseid’s User Story to ER Model**
-
-The ER diagram effectively supports the user stories and their respective acceptance criteria through its existing entities and relationships. For the gamer searching for songs based on video games, the Songs entity includes an attribute featured in a game or movie that the music was featured in, allowing users to search and display song titles and artists related to specific games. The forgetful user's need to save recent searches and auto-generate playlists is addressed by tracking user interactions with the Listen entity, which logs User-ID and Song-ID with a Timestamp, enabling the system to create and manage playlists through the Playlist entity and its relationship with Song via playlistsContains. The music conspiracy theorist can search for hidden messages in lyrics and album artwork using the Lyrics attribute within the Songs entity and linking album artwork through the Album entity's Album_cover_Artist attribute. Productivity enthusiasts can search for focus-enhancing music using the Genre and Mood attributes in the Songs entity, and access pre-curated playlists tailored for concentration within the Playlist entity, leveraging its Theme attribute. Lastly, nostalgic listeners can search for songs associated with popular toys or trends from specific decades by querying the Title and Lyrics attributes in the Songs entity and obtain details like song titles, artists, and release dates. Thus, the current ERD structure robustly supports the functionalities required by the user stories through well-defined attributes and relationships.
 
 # Entity-Relationship Model (ERM)
 
