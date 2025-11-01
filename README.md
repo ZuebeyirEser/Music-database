@@ -14,14 +14,6 @@ This report presents an in-depth analysis of a comprehensive music database desi
 
 This report details the design and implementation of a comprehensive music database, developed as part of a collaborative project with our team.
 
-**Team Members**:
-
-- Zübeyir Eser
-- Welat Irmak
-- Hassaan Naveed
-- Ashish Ghaskata
-- Ahmed Mohammedseid
-
 ## Overview
 
 The “User Stories” section describes the different types of users who will interact with the database and what their needs are. These user stories guide the design of the database. Moreover each group member has listed its own user story as well as user story to entity relationship model.
@@ -529,17 +521,6 @@ Normalization is a database design technique that reduces data redundancy and el
 
 The same logic applies to all other tables in your database. Therefore, our database satisfies BCNF.
 
-# Contribution
-
-Below table it is shown the contribtion of the each group member to music database project.
-
-**Team Members**: **Contribution Rate:**
-
-- Zübeyir Eser 25 %
-- Welat Irmak 15 %
-- Hassaan Naveed 20 %
-- Ashish Ghaskata 25 %
-- Ahmed Mohammedseid 15 %
 
 1. <http://10.97.5.102/phpmyadmin>: Note that this URL is reachable within University of Applied Sciences Aschaffenburg network. [↑](#footnote-ref-1)
 
